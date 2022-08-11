@@ -7,491 +7,720 @@
     font-family: Bangers-Regular;
     src: url(/fuentes/Bangers-Regular.ttf);
 }
+/*      E71D36 
+        box-shadow: 0px 0px 14px 7px rgba(0,0,0,0.30);
+        text-shadow: 1px 1px 3px black;
+        FFFF00
+*/
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
 
-@media (max-width: 899px ) {
+ul { 
+    padding-inline-start: 0%;
+}
 
-    html, body {
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-    }
+* { 
+    margin: 0%;
+}
 
+@media (max-width: 320px) {
+    
     body {
-        height: 250vh;
-        display: flex;
-        flex-direction: column;
-        margin: 0%;
+        height: 200vh;
     }
 
-    /* header */
-
-    header { 
-        background-color: #E71D36;
-        width: 100%;
+    header {
         height: 15vh;
+        width: 100%;
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        background-color: #E71D36;
         position: fixed;
     }
 
     .icono {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 15%;
+        height: 100%;
     }
 
     .titulo {
-        color: white;
-        margin: 0%;
-        font-family: angrybirds-regular;
-        -webkit-text-stroke: 1px black;
+        font-size: 0%;
     }
 
-    /* Navbar */
-    
     .navegador {
-        margin: 0%;
-        color: white;
-        list-style: none;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5px;
-        font-family: angrybirds-regular;
-    }
-
-    .navegador li, .accion li {
-        padding: 2px 10px;
-        border: 2px solid white;
-        border-radius: 10px;
-        background-color: #E71D36;
+        justify-content: space-around;
+        margin: 5px 0px;
+        list-style: none;
     }
 
     a {
-        text-decoration: none;
         color: white;
         cursor: none;
+        text-decoration: none;
+    }
+
+    .navegador li {
+        font-family: angrybirds-regular;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 2px 4px;
     }
 
     .navegador li:hover {
-        box-shadow: 0px 0px 14px 7px rgba(0,0,0,0.30);
-        text-shadow: 1px 1px 3px black;
+        box-shadow: 0px 0px 14px 7px rgba(0,0,0,0.30)
     }
 
-    .titulo {
-        text-shadow: 1px 1px 10px black;
-    }
-
-    /* primera seccion */
+    /* PRIMERA SECCION */
 
     .portada {
-        margin-top: 15vh;
         height: 50%;
+        background-image: url(./imagenes/fondo.png);
+        background-position: 50% 70%;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        justify-content: center;
-        background-image: url(./imagenes/fondo.png);
-        background-position: 50% 0%;
+        
     }
 
     .contenedor1 {
+        margin-top: 15vh;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: angrybirds-regular;
+    }
+    .secundario {
+        margin-top: 80px;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .slogan { 
+        text-align: center;
+        margin: 20px 0px;
+    }
+    .accion {
+        display: flex;
+        list-style: none;
+        font-size: 0.8em;
+        gap: 20px;
+    }
+    .accion li {
+        padding: 2px 4px;
+        border: 2px solid white;
+        border-radius: 7px;
+        background-color: #E71D36;
+    }
+
+    .familia {
+        display: flex;
+        justify-content: center;
+    }
+
+    .familia img {
+        width: 60%;
+    }
+
+    /* SEGUNDA SECCION */
+
+    .nosotros {
+        height: 50%;
+        background-color: #FFFF00;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .presentacion { 
+        background-color: white;
+        border: 3px solid black;
+        border-radius: 15px;
+        width: 90%;
+        font-family: Bangers-Regular;
+        padding: 5px;
+    }
+    .tercero    {
+        text-align: center;
+    }
+    .texto {
+        text-align: justify;
+        line-height: 1.4;
+    }
+
+
+    .imagen2 {
+        display: flex;
+        justify-content: center;
+        height: 15%;
+    }
+
+}
+@media (min-width: 321px) and (max-width: 425px) {
+
+    body {
+        height: 200vh;
+    }
+
+    header {
+        height: 18vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: #E71D36;
+        position: fixed;
+    }
+
+    header {
+        height: 15vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: #E71D36;
+        position: fixed;
+    }
+
+    .icono {
+        height: 100%;
+    }
+
+    .titulo {
+        font-size: 0%;
+    }
+
+    .navegador {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 5px 0px;
+        list-style: none;
+    }
+
+    a {
+        color: white;
+        cursor: none;
+        text-decoration: none;
+    }
+
+    .navegador li {
+        font-family: angrybirds-regular;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 2px 4px;
+    }
+
+    .navegador li:hover {
+        box-shadow: 0px 0px 14px 7px rgba(0,0,0,0.30)
+    }
+
+    /* PRIMERA SECCION */
+
+    .portada {
+        
+        height: 50%;
+        background-image: url(./imagenes/fondo.png);
+        background-position: 50% 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+
+    .contenedor1 {
+        margin-top: 15vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-family: angrybirds-regular;
     }
-
     .secundario {
-        margin: 0%;
-        font-size: 5em;
+        font-size: 2.5em;
         text-align: center;
     }
-
     .slogan {
-        font-size: 2em;
+        font-size: 1.5em;
         text-align: center;
+        margin: 20px 0px;
     }
-
     .accion {
         display: flex;
         list-style: none;
-        padding: 0%;
-        margin: 10px 0px;
-        gap: 15px;
-        font-size: 1.2em;
+        font-size: 1.1em;
+        gap: 25px;
+    }
+    .accion li {
+        padding: 2px 4px;
+        border: 2px solid white;
+        border-radius: 7px;
+        background-color: #E71D36;
     }
 
     .familia {
-        height: 50%;
-    }
-
-    /* segunda seccion */
-
-
-    .nosotros { 
-        height: 50%;
         display: flex;
-        align-items: center;
-        flex-direction: column-reverse;
         justify-content: center;
-        gap: 30px;
-        background-color: #FFFF00;
+        height: 30%;
     }
 
-    .presentacion {
+    /* SEGUNDA SECCION */
+
+    .nosotros {
+        height: 50%;
+        background-color: #FFFF00;
         display: flex;
-        flex-direction: column;
-        font-family: Bangers-Regular;
-        width: 60%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+    .presentacion { 
         background-color: white;
         border: 3px solid black;
         border-radius: 15px;
-        margin-left: 10px;
-        padding: 10px;
-        text-align: justify;
+        width: 80%;
+        font-family: Bangers-Regular;
+        padding: 5px;
     }
-
-    .tercero { 
+    .tercero    {
         text-align: center;
-        margin: 0%;
-        font-size: 2em;
     }
-    .presentacion p {
-        font-size: 1.5em;
+    .texto {
+        text-align: justify;
+        font-size: 1.3em;
+        line-height: 1.4;
     }
 
     .imagen2 {
         display: flex;
         justify-content: center;
+        height: 30%;
     }
-
-    .img2 {
-        width: 50%;
-    }
-
 }
 
-@media (min-width: 900px) and (max-width: 1200px ) {
-
+@media (min-width: 426px) and (max-width: 768px) {
     body {
-        height: 250vh;
-        display: flex;
-        flex-direction: column;
-        margin: 0%;
+        height: 200vh;
     }
 
-    /* header */
-
-    header { 
-        background-color: #E71D36;
-        width: 100%;
+    header {
         height: 15vh;
+        width: 100%;
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        background-color: #E71D36;
         position: fixed;
     }
 
     .icono {
-        display: flex;
-        justify-content: center;
         height: 100%;
     }
 
     .titulo {
+        font-size: 0%;
+    }
+
+    .navegador {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        gap: 15px;
+    }
+
+    a {
         color: white;
-        margin: 0%;
+        cursor: none;
+        text-decoration: none;
+    }
+
+    .navegador li {
+        font-size: 1.1em;
+        font-family: angrybirds-regular;
+        border: 3px solid white;
+        border-radius: 10px;
+        padding: 4px 8px;
+    }
+
+    .navegador li:hover {
+        box-shadow: 0px 0px 10px 7px rgba(0,0,0,0.30)
+    }
+
+    /* PRIMERA SECCION */
+
+    .portada {
+        height: 50%;
+        background-image: url(./imagenes/fondo.png);
+        background-position: 50% 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contenedor1 {
+        margin-top: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: angrybirds-regular;
+    }
+    .secundario {
+        font-size: 4em;
         text-align: center;
+        text-shadow: 2px 2px 5px white  ;
+    }
+    .slogan {
+        font-size: 2.2em;
+        text-align: center;
+        margin: 20px 0px;
+        text-shadow: 2px 2px 5px white  ;
+    }
+    .accion {
+        display: flex;
+        list-style: none;
+        font-size: 1.5em;
+        gap: 25px;
+    }
+    .accion li {
+        padding: 2px 4px;
+        border: 2px solid white;
+        border-radius: 7px;
+        background-color: #E71D36;
+    }
+
+    .familia {
+        display: flex;
+        justify-content: center;
+        height: 40%;
+    }
+
+    
+
+    /* SEGUNDA SECCION */
+
+    .nosotros {
+        height: 50%;
+        background-color: #FFFF00;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+    .presentacion { 
+        background-color: white;
+        border: 4px solid black;
+        border-radius: 15px;
+        width: 70%;
+        font-family: Bangers-Regular;
+        padding: 7px;
+    }
+    .tercero    {
+        text-align: center;
+        font-size: 1.8em;
+        margin-bottom: 12px;
+    }
+    .texto {
+        text-align: justify;
+        font-size: 1.7em;
+    }
+
+    .imagen2 {
+        display: flex;
+        justify-content: center;
+        height: 30%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    body {
+        height: 200vh;
+    }
+
+    header {
+        height: 15vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: #E71D36;
+        position: fixed;
+    }
+
+    .icono {
+        height: 100%;
+    }
+
+    .titulo {
+        margin-top: 22px;
         font-size: 3em;
         font-family: angrybirds-regular;
         -webkit-text-stroke: 1px black;
-    }
-
-    /* Navbar */
-    
-    .navegador {
-        margin: 0%;
         color: white;
-        list-style: none;
-        display: flex;
-        
-        align-items: center;
-        gap: 10px;
-        font-family: angrybirds-regular;
     }
 
-    .navegador li, .accion li {
-        padding: 7px 15px;
-        border: 2px solid white;
-        border-radius: 10px;
-        background-color: #E71D36;
+    .navegador {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        gap: 15px;
     }
 
     a {
-        text-decoration: none;
         color: white;
         cursor: none;
-    }
-
-    .navegador li:hover {
-        box-shadow: 0px 0px 14px 7px rgba(0,0,0,0.30);
-        text-shadow: 1px 1px 3px black;
-    }
-
-    .titulo {
-        text-shadow: 1px 1px 10px black;
-    }
-
-    /* primera seccion */
-
-    .portada {
-        margin-top: 15vh;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-image: url(./imagenes/fondo.png);
-        background-position: 50% 0%;
-    }
-
-    .contenedor1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 100px;
-        font-family: angrybirds-regular;
-    }
-
-    .secundario {
-        margin: 0%;
-        font-size: 6em;
-        text-align: center;
-    }
-
-    .slogan {
-        font-size: 4em;
-        text-align: center;
-    }
-
-    .accion {
-        display: flex;
-        list-style: none;
-        padding: 0%;
-        margin: 15px 0px;
-        gap: 15px;
-        font-size: 1.3em;
-    }
-
-    .familia {
-        height: 70%;
-    }
-
-    /* segunda seccion */
-
-
-    .nosotros { 
-        height: 50%;
-        display: flex;
-        align-items: center;
-        flex-direction: column-reverse;
-        justify-content: center;
-        gap: 30px;
-        background-color: #FFFF00;
-    }
-
-    .presentacion {
-        display: flex;
-        flex-direction: column;
-        font-family: Bangers-Regular;
-        width: 80%;
-        background-color: white;
-        border: 3px solid black;
-        border-radius: 15px;
-        padding: 10px;
-        text-align: justify;
-    }
-
-    .tercero { 
-        text-align: center;
-        margin: 0%;
-        font-size: 2em;
-    }
-    .presentacion p {
-        font-size: 2em;
-    }
-
-    .imagen2 {
-        display: flex;
-        justify-content: center;
-    }
-
-    .img2 {
-        width: 60%;
-    }
-}
-
-@media (min-width: 1201px) {
-
-    body {
-        height: 250vh;
-        display: flex;
-        flex-direction: column;
-        margin: 0%;
-    }
-
-    /* header */
-
-    header { 
-        background-color: #E71D36;
-        width: 100%;
-        height: 15vh;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed;
-    }
-
-    .icono {
-        display: flex;
-        justify-content: center;
-        height: 100%;
-    }
-
-    .titulo {
-        color: white;
-        margin: 0%;
-        text-align: center;
-        font-size: 5em;
-        font-family: angrybirds-regular;
-        -webkit-text-stroke: 1px black;
-    }
-
-    /* Navbar */
-    
-    .navegador {
-        margin: 0%;
-        color: white;
-        list-style: none;
-        display: flex;
-        
-        align-items: center;
-        gap: 10px;
-        font-family: angrybirds-regular;
+        text-decoration: none;
     }
 
     .navegador li {
         font-size: 1.3em;
-        padding: 7px 15px;
-        border: 2px solid white;
+        font-family: angrybirds-regular;
+        border: 3px solid white;
         border-radius: 10px;
-        background-color: #E71D36;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-        cursor: none;
+        padding: 4px 8px;
     }
 
     .navegador li:hover {
-        box-shadow: 0px 0px 14px 7px rgba(0,0,0,0.30);
-        text-shadow: 1px 1px 3px black;
+        box-shadow: 0px 0px 10px 7px rgba(0,0,0,0.30)
     }
 
-    .titulo {
-        text-shadow: 1px 1px 10px black;
-    }
-
-    /* primera seccion */
+    /* PRIMERA SECCION */
 
     .portada {
-        margin-top: 15vh;
         height: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         background-image: url(./imagenes/fondo.png);
-        background-position: 50% 0%;
-        border-bottom: 100px solid black;
+        background-position: 50% 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .contenedor1 {
+        margin-top: 15vh;
         display: flex;
-        height: 60%;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         font-family: angrybirds-regular;
     }
-
     .secundario {
-        margin: 0%;
-        font-size: 7em;
+        font-size: 6em;
         text-align: center;
+        text-shadow: 2px 2px 5px white  ;
     }
-
     .slogan {
-        font-size: 4em;
+        font-size: 3em;
         text-align: center;
+        margin: 20px 0px;
+        text-shadow: 2px 2px 5px white  ;
     }
-
     .accion {
         display: flex;
         list-style: none;
-        padding: 0%;
-        margin: 15px 0px;
-        gap: 15px;
-        font-size: 1.3em;
+        font-size: 1.7em;
+        gap: 25px;
     }
-
     .accion li {
-        padding: 7px 15px;
+        padding: 2px 4px;
         border: 2px solid white;
-        border-radius: 10px;
+        border-radius: 7px;
         background-color: #E71D36;
+        -webkit-text-stroke: 1px black;
     }
 
     .familia {
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 40%;
     }
 
-    /* segunda seccion */
+    
 
+    /* SEGUNDA SECCION */
 
-    .nosotros { 
+    .nosotros {
         height: 50%;
+        background-color: #FFFF00;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+    .presentacion { 
+        background-color: white;
+        border: 4px solid black;
+        border-radius: 15px;
+        height: 40%;
+        font-family: Bangers-Regular;
+        padding: 7px;
+        margin: 0px 15px;
+    }
+    .tercero    {
+        text-align: center;
+        font-size: 2.6em;
+        margin-bottom: 10px;
+    }
+    .texto {
+        text-align: justify;
+        font-size: 2em;
+    }
+
+    .imagen2 {
+        display: flex;
+        justify-content: center;
+        height: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        height: 200vh;
+    }
+    header {
+        height: 15vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: #E71D36;
+        position: fixed;
+    }
+    .icono {
+        height: 100%;
+    }
+    .titulo {
+        margin-top: 15px;
+        font-size: 4em;
+        font-family: angrybirds-regular;
+        -webkit-text-stroke: 1px black;
+        color: white;
+    }
+    .navegador {
         display: flex;
         align-items: center;
-        gap: 80px;
-        background-color: #FFFF00;
+        justify-content: space-around;
+        list-style: none;
+        gap: 17px;
+    }
+    .navegador li a {
+        color: white;
+        cursor: none;
+        text-decoration: none;
+        -webkit-text-stroke: 1px black;
+    }
+    .navegador li {
+        font-size: 1.5em;
+        font-family: angrybirds-regular;
+        border: 4px solid white;
+        border-radius: 15px;
+        padding: 5px 10px;
+    }
+    .navegador li:hover {
+        box-shadow: 0px 0px 10px 7px rgba(0,0,0,0.30);
+        
     }
 
-    .presentacion {
+    /* PRIMERA SECCION */
+
+    .portada {
+        height: 50%;
+        background-image: url(./imagenes/fondo.png);
+        background-position: 50% 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contenedor1 {
+        margin-top: 15vh;
+        width: 50%;
         display: flex;
         flex-direction: column;
-        font-family: Bangers-Regular;
-        width: 60%;
-        margin-left: 20px;
-        background-color: white;
-        border: 3px solid black;
-        border-radius: 15px;
-        padding: 10px;
-        text-align: justify;
+        align-items: center;
+        font-family: angrybirds-regular;
     }
-
-    .tercero { 
+    .secundario {
+        font-size: 5em;
         text-align: center;
-        margin: 0%;
-        font-size: 2.5em;
+        text-shadow: 5px 5px 1px white  ;
     }
-    .presentacion p {
-        font-size: 2.2em;
+    .slogan {
+        font-size: 3.4em;
+        text-align: center;
+        margin: 20px 0px;
+        text-shadow: 4px 4px 5px white  ;
+    }
+    a {
+        color: white;
+        cursor: none;
+        text-decoration: none;
+    }
+    .accion {
+        display: flex;
+        list-style: none;
+        font-size: 1.8em;
+        gap: 25px;
+    }
+    .accion li {
+        padding: 5px 10px;
+        border: 3px solid white;
+        border-radius: 15px;
+        background-color: #E71D36;
+    }
+    .accion li a {
+        -webkit-text-stroke: 1px black;
+    }
+    .familia {
+        display: flex;
+        height: 50%;
     }
 
-    .img2 {
-        width: 90%;
+    /* SEGUNDA SECCION */
+
+    .nosotros {
+        height: 50%;
+        background-color: #FFFF00;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+    .presentacion { 
+        background-color: white;
+        border: 4px solid black;
+        border-radius: 15px;
+        width: 40%;
+        font-family: Bangers-Regular;
+        padding: 7px;
+        margin: 0px 15px;
+    }
+    .tercero    {
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 15px;
+    }
+    .texto {
+        text-align: justify;
+        font-size: 2em;
+    }
+
+    .imagen2 {
+        display: flex;
+        justify-content: center;
+        height: 60%;
     }
 }
